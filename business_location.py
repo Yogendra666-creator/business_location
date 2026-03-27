@@ -4,10 +4,13 @@ import folium
 from streamlit_folium import st_folium
 import streamlit as st
 import matplotlib.pyplot as plt
-
+import numpy as np
+from sqlalchemy import create_engine, text
 # Load data
 # df = pd.read_csv("Loan-Portfolio-data.csv")
 #df = pd.read_csv("C:/Users/UHF1047/Downloads/Loan_Portfolio_Mapping_Data.csv")
+
+dwh_con = create_engine("mysql+pymysql://DWH:ENyZE#82@192.168.93.20/dwh").raw_connection()
 df = pd.read_sql("select * from `loan-portfolio-mapping-data-2 (1)`;", dwh_con)
 
 st.title("Loan Portfolio Map Dashboard")
