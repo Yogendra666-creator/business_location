@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # Load data
 # df = pd.read_csv("Loan-Portfolio-data.csv")
-df = pd.read_csv("Loan_Portfolio_Mapping_Data.csv")
+df = pd.read_csv("C:\Users\UHF1047\Downloads\Loan_Portfolio_Mapping_Data.csv")
 
 st.title("Loan Portfolio Map Dashboard")
 
