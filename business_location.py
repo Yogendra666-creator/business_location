@@ -10,7 +10,7 @@ from sqlalchemy import create_engine, text
 # df = pd.read_csv("Loan-Portfolio-data.csv")
 #df = pd.read_csv("C:/Users/UHF1047/Downloads/Loan_Portfolio_Mapping_Data.csv")
 
-dwh_con = create_engine("mysql+pymysql://DWH:ENyZE#82@192.168.93.20/dwh").raw_connection()
+dwh_con = create_engine("mysql+pymysql://DWH:ENyZE#82@192.168.93.20/dwh")
 df = pd.read_sql("select * from `loan-portfolio-mapping-data-2 (1)`;", dwh_con)
 
 st.title("Loan Portfolio Map Dashboard")
