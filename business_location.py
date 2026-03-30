@@ -8,7 +8,7 @@ import numpy as np
 from sqlalchemy import create_engine, text
 # Load data
 # df = pd.read_csv("Loan-Portfolio-data.csv")
-#df = pd.read_csv("C:/Users/UHF1047/Downloads/Loan_Portfolio_Mapping_Data.csv")
+df = pd.read_csv("C:/Users/UHF1047/Downloads/Loan_Portfolio_Mapping_Data.csv")
 
 
 df = pd.read_sql("select * from `loan-portfolio-mapping-data-2 (1)`;", dwh_con)
