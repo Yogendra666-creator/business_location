@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, text
 df = pd.read_csv("C:/Users/UHF1047/Downloads/Loan_Portfolio_Mapping_Data.csv")
 
 
-df = pd.read_sql("select * from `loan-portfolio-mapping-data-2 (1)`;", dwh_con)
+#df = pd.read_sql("select * from `loan-portfolio-mapping-data-2 (1)`;", dwh_con)
 
 st.title("Loan Portfolio Map Dashboard")
 
